@@ -9,6 +9,7 @@ terraform {
 
 provider "azurerm" {
   features {}
+  subscription_id = var.subscriptionID
 }
 
 module "vm_network" {
